@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1f2e, #2d2d44);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.backButton {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 100px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.backButton:hover {
+  background-color: #e84118;
+  transform: translateY(-2px);
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: #eaffea;
+    text-shadow:    0 0 6px rgba(0,255,0,0.35),
+                    0 0 14px rgba(0,255,0,0.25),
+                    0 0 22px rgba(0,255,0,0.15);
+    letter-spacing: 1px;
+    animation: headingGlow 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes headingGlow {
+    0% {
+        text-shadow:    0 0 6px rgba(0,255,0,0.35),
+                        0 0 14px rgba(0,255,0,0.25),
+                        0 0 22px rgba(0,255,0,0.15);
+        opacity: 0.8;
+    } 100% {
+        text-shadow:    0 0 12px rgba(0,255,0,0.75),
+                        0 0 28px rgba(0,255,0,0.55),
+                        0 0 44px rgba(0,255,0,0.35);
+        opacity: 1;
+    }
+}
+
+.clockContainer {
+    background: #2d2d44;
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.5),
+                -10px -10px 30px rgba(255,255,255,0.05);
+}
+
+#clock {
+    font-size: 5rem;
+    color: 0f0;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(0,255,0,0.9), 0 0 20px rgba(0,255,0,0.7), 0 0 30px rgba(0,255,0,0.5), 0 0 50px rgba(0,255,0,0.3);
+}
